@@ -1,0 +1,52 @@
+persona {
+    nombre
+    apellido
+    direccion {
+        calle
+        numero
+        cp    
+    }
+}
+
+//==========================================
+version db relacional
+
+persona {
+    id_persona: 10
+    nombre: mariano
+    apellido: aquino
+    direccion: 1
+}
+
+direccion {
+    id_direccion: 1
+    calle: rivadavia
+    numero: 1234
+    cp: 5678
+}
+
+persona.direccion -> direccion.id
+
+SQL
+
+select nombre, apellido, cp from personas inner join direcciones on persona.direccion = direccion.id where id_persona = 10
+
+select count distinct calle from direcciones
+
+//==========================================
+version db NO relacional
+
+persona {
+    id: 10
+    nombre
+    apellido
+    direccion {
+        calle
+        numero
+        cp    
+    }
+}
+
+db.personas.find({ id: 10 })
+
+
