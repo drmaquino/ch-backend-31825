@@ -7,7 +7,7 @@
         user: "<nombre_del_usuario>",
         pwd: "<contraseña>",
         roles: [
-           { role: "< read | readWrite", db: "<base_de_datos>" }
+           { role: "read | readWrite", db: "<base_de_datos>" }
         ]
       }
     )
