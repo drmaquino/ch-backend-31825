@@ -1,0 +1,13 @@
+{
+  "type": "module",
+  "name": "ejemplo-tdd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "test": "nodemon test/test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
