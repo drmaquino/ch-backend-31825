@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    hola!
+    <div id="subtitulo"></div>
+    <script>
+        fetch('http://localhost:8081/api/personas').then(res => res.json()).then(persona => {
+            document.getElementById("subtitulo").innerHTML = persona.nombre
+        })
+    </script>
+</body>
+
+</html>
